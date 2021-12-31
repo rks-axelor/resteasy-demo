@@ -1,0 +1,17 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+repositories {
+	
+	mavenCentral()
+}
+dependencies{
+	// https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs
+implementation group: 'org.jboss.resteasy', name: 'resteasy-jaxrs', version: '3.14.0.Final'
+// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+
+	
+}
